@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="styles/main.css" rel="stylesheet">
+    <meta charset="utf-8">
+    <title>Scalable Displays & density</title>
+</head>
+<body>
+   <nav>
+     <ul>
+        <li><a href="index.html">Home</a></li>
+        <li>
+          <a href="index.html">Examples</a>  
+          <ul>
+            <li><a href="search.html">Custom Search</a></li>
+            </ul>
+        </li>
+     </ul>
+   </nav> 
+   <p> here is a demo on how to create responsive image contents</p>
+   <picture>
+    <img src="..\site\Assets\401665674-4cbd5164-6877-4e00-b9e8-8630a36f1479.png" width ="200" height="400" alt="screenshot from a lab">
+    <figcaption>screenshot from another lab with no backup</figcaption>
+   </picture>
+
+   <picture>
+    <source src="..\site\Assets\401665674-4cbd5164-6877-4e00-b9e8-8630a36f1479.png">   
+    <img src="..\site\Assets\backupscreenshot.png" width ="200" height="400" alt="screenshot from a lab">
+    <figcaption>screenshot from another lab with backup</figcaption>
+   </picture>
+
+
+   <picture>
+    <img class="screenshot-css" src="..\site\Assets\401665674-4cbd5164-6877-4e00-b9e8-8630a36f1479.png" width ="200" height="400" alt="screenshot from a lab">
+    <figcaption>screenshot from another lab styled with css</figcaption>
+   </picture>
+
+
+   <picture>
+    <source media="(max-width: 200px)" srcset="../site/assets/backupscreenshot_105.png">
+    <source media="(min-width: 800px)" srcset="../site/assets/backupscreenshot_140.png 2x">
+    <img  src="../site/Assets/backupscreenshot.png" alt="screenshot from a lab">
+    <figcaption>screenshot from another lab using source to scale</figcaption>
+  </picture>
+
+
+
+</body>
+</html>
