@@ -5,70 +5,95 @@
     <meta charset="UTF-8">
     <meta name="author" content="Aaron Buchholz">
     <meta name="description" content="This page acts as a basic intro to web dev from the csd112 class.">
-    <link rel="icon" type="image/png" href="/site/Images/favicon-96x96.png" sizes="96x96">
-    <link rel="icon" type="image/svg+xml" href="/site/Images/favicon.svg">
-    <link rel="shortcut icon" href="/site/Images/favicon.ico">
-    <link rel="apple-touch-icon" sizes="180x180" href="/site/Images/apple-touch-icon.png">
-    <link rel="manifest" href="/site/Images/site.webmanifest">      
+    <link rel="icon" type="image/png" href="Images/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="Images/favicon.svg">
+    <link rel="shortcut icon" href="Images/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="Images/apple-touch-icon.png">
+    <link rel="manifest" href="Images/site.webmanifest">
     <title>Index</title>
 </head>
 
 <body>
     <div class="width-wrap">
-
         <header id="top">
-
-
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="links.html">Links</a></li>
                     <li><a href="glossary.html">Glossary</a></li>
+
                 </ul>
             </nav>
-
         </header>
-
         <main>
             <h1>Welcome to Aaron’s Website</h1>
+            <a href="Images/Aaron_thumbnail.jpg" target="_blank">
+                <img srcset="Images/Aaron_150px.jpg 150w, Images/Aaron_300px.jpg 300w"
+                    sizes="(max-width: 500px) 150px, 300px" src="Images/Aaron_thumbnail.jpg"
+                    alt="Me with my grandmother's donkey">
+            </a>
+
+
             <p>Heyo, My name is Aaron Buchholz. I enjoy playing roguelike games such as the binding of isaac and noita.
-                I hope to actually retain all of the stuff I will learn this semester.</p> <!-- Found me! -->
+                I hope to actually retain all of the stuff I will learn this semester.</p>
             <p>Im not sure what else to put in this paragraph but I think web dev is neat, I want to make a website for
                 my SO who is an artist to display their art.</p>
 
-            <h2>My Favourite Thing(s)</h2>
+            <h2>My Favourite Things</h2>
             <a href="https://store.steampowered.com">
-                <img src="site/images/logo.png" alt="Steam Company Logo">
+                <img src="images/logo.png" alt="Steam Company Logo">
             </a>
 
             <h3>Favourite Games (currently)</h3>
-
             <ol>
                 <li>Rain World</li>
                 <li>Noita</li>
                 <li>Balatro</li>
             </ol>
-
             <h3>A Web Dev Haiku for you..</h3>
-            <p>I thought I fixed it <br> But it turns out I was wrong <br>I just made it worse</p>
+            <p>I thought I fixed it</p>
+            <p>But it turns out I was wrong</p>
+            <p>I just made it worse</p>
             <cite>by <span class="author">Aleksandr Hovhannisyan </span></cite>
+            <h3>Public Domain Audiobook</h3>
+            <audio controls>
+                <source
+                    src="https://www.archive.org/download/firstchaptercollection004_1508_librivox/firstchapter004_bleakhouse_charlesdickens_fs_64kb.mp3"
+                    type="audio/mpeg">
+                <p>Your browser does not support the audio element, Click here to download the file:
+                    <a
+                        href="https://www.archive.org/download/firstchaptercollection004_1508_librivox/firstchaptercollection004_1508_librivox_64kb_mp3.zip">
+                    </a>
+                </p>
+
+            </audio>
+            <H3>Cool Youtube Video</H3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/GMx8OsTDHfM?si=79sbLeBe81xgWSGb"
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
         </main>
-
-
         <footer>
-            <hr>
-            <blockquote>
 
+            <hr>
+
+            <blockquote>
                 <p>“The only way to learn a new programming language is by writing programs in it.”</p>
                 <cite>&mdash; <span class="author">Dennis Ritchie</span></cite>
-                <p>&copy; 2021 <a href="mailto:24039053@saultcollege.a?subject=Message%20from%20CSD112%20Website">Aaron
-                        Buchholz</a></p>
+                <p>&copy; 2021 Aaron Buchholz</p>
             </blockquote>
+
+            <picture>
+                <source srcset="Images/sc-logo.svg" type="image/svg+xml" width="70">
+                <img src=sc-logo.png srcset="Images/sc-logo_105.png 1.5x , Images/sc-logo_140.png 2x"
+                    alt="The Sault College logo">
+            </picture>
+
+
         </footer>
-
         <a href="#top" title="Back to top">◤</a>
-
     </div>
 </body>
 
