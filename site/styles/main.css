@@ -1,8 +1,127 @@
+.screenshot-css {
+    border: 3px solid #93a36c;
+    margin: 20px 0;
+    padding: 10px;
+}
 
-            
-        .screenshot-css {
-            border: 3px solid #93a36c;
-            margin: 20px 0;
-            padding: 10px;
-            }
+html {
+    box-sizing: border-box;
+}
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+::selection{
+    background-color: #551800;
+    color: #D4886A;
+}
+
+.width-wrap{
+max-width: 960px;
+margin-left: auto;
+margin-right: auto;
+padding-left: 2em;
+padding-right: 2em;
+padding-bottom: 2em;
+border-left: 1px solid rgba(0,0,0,0.3);
+border-right: 1px solid rgba(0,0,0,0.3);
+border-bottom: 1px solid rgba(0,0,0,0.3);
+margin-bottom: 3em;
+
+background-color: #D4886A;
+}
+
+footer hr {
+
+    border: none;
+    border-bottom: 3px dotted #964B00;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    width: clamp(300px, 50vw, 890px)
+}
+
+dt::after{
+
+    content: ":";
+}
+
+body{
+    background-color: #AA5939;
+    color: #551800;
+}
+
+h1, h2, h3 {
+    color: #551800;
+}
+a {
+    color: #803315;
+}
+
+header{
+    border-top: 1px solid rgba(0,0,0,0.1);
+    margin-left: -2em ;
+    margin-right: -2em;
+}
+header nav {
+    border-bottom: 1px dotted rgba(0,0,0,0.3);
+    margin-left: 2em;
+    margin-right: 2em;
+    
+}
+
+
+header nav a:hover {
+    
+    border-top-color: #551800;
+
+}
+header nav a {
+    display: inline-block;
+    padding-top: 1em;
+    padding-bottom: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+    color: #551800;
+    border-top: 4px solid transparent;
+}
+header nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header nav ul li {
+    display: inline;
+}
+
+table th, table td{
+    padding: 0.3em 1em;
+}
+thead th, tfoot td, tbody th{
+    background-color: rgba(0,0,0,0.2);
+}
+tbody td{
+    background-color: rgba(0,0,0,0.05);
+}
+tbody tr:nth-child(even){
+    background-color: rgba(0,0,0,0.15);
+}
+label{
+    display: block;
+}
+input[type="radio"], input[type="checkbox"]{
+    display: inline;
+}
+button[type="submit"]{
+    background-color: #551800;
+    color: #D4886A;
+    border: none;
+    padding:  1em 3em;
+    cursor: pointer;
+}
+
+input:invalid, textarea:invalid, select:invalid {
+    background-color: #ca9681;
+}
