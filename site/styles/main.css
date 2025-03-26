@@ -176,7 +176,7 @@ caption {
     caption-side: bottom;
 }
 
-video {
+iframe {
     border-top-right-radius: 2em;
     border-bottom-left-radius: 2em;
 }
