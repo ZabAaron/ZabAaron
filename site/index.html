@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <meta name="author" content="Aaron Buchholz">
     <meta name="description" content="This page acts as a basic intro to web dev from the csd112 class.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" href="Images/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/svg+xml" href="Images/favicon.svg">
     <link rel="icon" href="Images/favicon.ico">
@@ -34,11 +35,15 @@
     <div class="width-wrap">
         <header id="top">
             <nav>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="sandwich-icon"><span></span></label>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="links.html">Links</a></li>
                     <li><a href="glossary.html">Glossary</a></li>
                     <li><a href="survey.html">Survey</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="lorem.html">Lorem</a></li>
 
                 </ul>
             </nav>
@@ -51,6 +56,7 @@
                     <img srcset="Images/Aaron_150px.jpg 150w, Images/Aaron_300px.jpg 300w"
                         sizes="(max-width: 500px) 150px, 300px" src="Images/Aaron_thumbnail.jpg"
                         alt="Me with my grandmother's donkey">
+                    <img src="Images/paperclip.png" alt="paperclip" class="paperclip">
                 </a>
 
 
@@ -154,46 +160,61 @@
 
 
             <h2>My Favourite Things</h2>
-            <a href="https://store.steampowered.com">
-                <img src="images/logo.png" alt="Steam Company Logo">
-            </a>
-
-            <h3>Favourite Games (currently)</h3>
-            <ol>
-                <li>Rain World</li>
-                <li>Noita</li>
-                <li>Balatro</li>
-            </ol>
-            <h3>A Web Dev Haiku for you..</h3>
-
-            <p>I thought I fixed it <br>
-                But it turns out I was wrong<br>
-                I just made it worse<br>
-
-                <cite>by <span class="author">Aleksandr Hovhannisyan </span>
-                </cite>
-            </p>
 
 
-            <h3>Public Domain Audiobook</h3>
-            <audio controls>
-                <source
-                    src="https://www.archive.org/download/firstchaptercollection004_1508_librivox/firstchapter004_bleakhouse_charlesdickens_fs_64kb.mp3"
-                    type="audio/mpeg">
-                <p>Your browser does not support the audio element, Click here to download the file:
-                    <a
-                        href="https://www.archive.org/download/firstchaptercollection004_1508_librivox/firstchaptercollection004_1508_librivox_64kb_mp3.zip">
+            <div class="favourites">
+
+                <input type="radio" name="tabs" id="tab1" checked>
+                <label for="tab1"><h3>Favourite Games</h3></label>
+
+                <div>
+                    <a href="https://store.steampowered.com">
+                        <img src="images/logo.png" alt="Steam Company Logo">
                     </a>
-                </p>
+                    <ol>
+                        <li>Rain World</li>
+                        <li>Noita</li>
+                        <li>Balatro</li>
+                    </ol>
+                </div>
 
-            </audio>
-            <H3>Cool Youtube Video</H3>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/GMx8OsTDHfM?si=79sbLeBe81xgWSGb"
-                title="YouTube video player"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <input type="radio" name="tabs" id="tab2">
+                <label for="tab2"><h3>A Web Dev Haiku</h3></label>
+                <div>
+                    <p>I thought I fixed it <br>
+                        But it turns out I was wrong<br>
+                        I just made it worse<br>
 
+                        <cite>by <span class="author">Aleksandr Hovhannisyan </span>
+                        </cite>
+                    </p>
+                </div> 
 
+                <input type="radio" name="tabs" id="tab3" >
+                <label for="tab3"><h3>Public Domain Audiobook</h3></label>
+                <div>
+                <audio controls>
+                    <source
+                        src="https://www.archive.org/download/firstchaptercollection004_1508_librivox/firstchapter004_bleakhouse_charlesdickens_fs_64kb.mp3"
+                        type="audio/mpeg">
+                    <p>Your browser does not support the audio element, Click here to download the file:
+                        <a
+                            href="https://www.archive.org/download/firstchaptercollection004_1508_librivox/firstchaptercollection004_1508_librivox_64kb_mp3.zip">
+                        </a>
+                    </p>
+
+                </audio>
+            </div>
+
+            <input type="radio" name="tabs" id="tab4">
+            <label for="tab4"><h3>Cool Youtube Video</h3></label>
+            <div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/GMx8OsTDHfM?si=79sbLeBe81xgWSGb"
+                    title="YouTube video player"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
         </main>
         <footer>
 
@@ -213,7 +234,7 @@
 
 
         </footer>
-        <a href="#top" title="Back to top">◤</a>
+        <a href="#top" title="Back to top" id="back-to-top">◤</a>
     </div>
 </body>
 

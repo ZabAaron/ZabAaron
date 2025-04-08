@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <meta name="author" content="Aaron Buchholz">
     <meta name="description" content="This page acts as a basic intro to web dev from the csd112 class.">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/png" href="Images/favicon-96x96.png" sizes="96x96">
     <link rel="icon" type="image/svg+xml" href="Images/favicon.svg">
     <link rel="icon" href="Images/favicon.ico">
@@ -35,6 +36,15 @@
         footer {
             clear: both;
         }
+        @media (max-width: 600px) {
+            img main{
+                float: none !important;
+                display: block;
+                margin: 1em auto;
+
+            }
+            
+        }
     </style>
 </head>
 
@@ -42,11 +52,15 @@
     <div class="width-wrap">
         <header id="top">
             <nav>
+                <input type="checkbox" id="menu-toggle">
+                <label for="menu-toggle" class="sandwich-icon"><span></span></label>
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="links.html">Links</a></li>
                     <li><a href="glossary.html">Glossary</a></li>
                     <li><a href="survey.html">Survey</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="lorem.html">Lorem</a></li>
 
                 </ul>
             </nav>
@@ -114,7 +128,7 @@
 
 
         </footer>
-        <a href="#top" title="Back to top">◤</a>
+        <a href="#top" title="Back to top" id="back-to-top">◤</a>
     </div>
 </body>
 
