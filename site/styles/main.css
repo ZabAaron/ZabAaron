@@ -64,7 +64,6 @@ footer a:hover {
 }
 
 footer hr {
-    position: column;
     border: none;
     border-bottom: 3px dotted #964B00;
     margin: 3em 0 2em;
@@ -305,7 +304,7 @@ img.bio {
     }
     #making-a-table table td {
       display: block;
-      margin-bottom: 0 1rem;
+      margin-bottom: 1rem;
 
     }
     #making-a-table table td:first-of-type {
